@@ -6,12 +6,11 @@ public class ex2 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
+        int score ;
+        do {
         System.out.print("Enter your score, " +
                 "and I will tell you grade:");
-
-        int score = sc.nextInt();
-
+            score = sc.nextInt();
         if (score >= 0 && score <= 49)
             System.out.println("Grade F.");
         else if (score >= 50 && score < 54)
@@ -26,17 +25,12 @@ public class ex2 {
             System.out.println("Grade B.");
         else if (score >= 75 && score < 79)
             System.out.println("Grade B+.");
-        else if (score >= 80 && score <=100)
+        else if (score >= 80 && score <= 100)
             System.out.println("Grade A.");
         else
             System.out.println("กรุณาใส่ 0-100.");
 
-
-
-
-
-
-
+    }while (!(score >=0 && score <=100));
 
 
     }
